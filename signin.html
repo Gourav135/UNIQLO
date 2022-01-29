@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign_up_form</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      .login_navbar_section {
+        width: 100%;
+        height: 100px;
+        margin: auto;
+        border-bottom: 1px solid rgb(196, 196, 196);
+        margin-bottom: 70px;
+      }
+      .login_parent {
+        width: 65%;
+        height: 550px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+          rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      }
+      .login_parent_child {
+        width: 97%;
+        height: 92%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+      }
+      .login_section {
+        width: 49%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+  
+      .flex {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .create_account_section {
+        width: 49%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      #login_input_email {
+        width: 100%;
+        padding: 18px;
+        background-color: whitesmoke;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 3px solid rgb(143, 143, 143);
+        outline: none;
+      }
+      #login_input_password {
+        width: 100%;
+        padding: 18px;
+        outline: none;
+        background-color: whitesmoke;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 3px solid rgb(143, 143, 143);
+      }
+      .p1 {
+        font-size: 20px;
+      }
+      .pss {
+        font-size: 20px;
+        color: red;
+      }
+      .vertical {
+        width: 1%;
+        height: 100%;
+      }
+      .vertical2 {
+        height: 98%;
+        border: 0.5px solid rgb(228, 228, 228);
+      }
+      .star {
+        color: teal;
+      }
+      .login_button {
+        width: 100%;
+        height: 80px;
+      }
+      .h3for > a {
+        text-decoration: none;
+        color: black;
+      }
+      #button {
+        width: 50%;
+        height: 40px;
+        border: black;
+        background-color: black;
+        color: white;
+      }
+      .login_terms > a {
+        text-decoration: none;
+        color: black;
+      }
+      @media only screen and (min-width: 375px) and (max-width: 768px) {
+        .login_parent_child {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    </style>
+  </head>
+  <script
+    src="https://kit.fontawesome.com/511a6cb386.js"
+    crossorigin="anonymous">
+  </script>
+  
+  <body>
+    <div class="login_navbar_section">
+      
+    </div>
+    <div class="login_parent">
+      <div class="login_parent_child">
+        <!-- login section  -->
+        <div class="login_section">
+          <h1>LOGIN</h1>
+          <p class="p1">Log in with your email address and password.</p>
+          <p class="pss">
+            Please do not reuse a password you have used on another service or a
+            password that is easily guessed.
+          </p>
+          <div class="login_input_section flex">
+            <div class="login_input_emails">
+              <label id="label">
+                <h3>EMAIL ADDRESS <strong class="star">*</strong></h3>
+              </label>
+              <input
+                type="text"
+                id="login_input_email"
+                placeholder="abc@gmail.com"
+              />
+              <p id="show"></p>
+            </div>
+            <div class="login_input_password">
+              <label id="label2">
+                <h3>PASSWORD <strong class="star">*</strong></h3></label
+              >
+              <input
+                type="password"
+                id="login_input_password"
+                placeholder="xyz@123"
+              />
+              <p id="show2"></p>
+            </div>
+            <p>
+              Password must be at least 8 characters, and contain both numbers
+              and alphabet letters.
+            </p>
+          </div>
+          <div class="login_condition flex">
+            <h4 class="login_terms"><a href="">TERMS OF USE</a></h4>
+            <h4 class="login_terms"><a href="">PRIVACY POLICY</a></h4>
+          </div>
+          <div class="login_button">
+            <button id="button" onclick="submit()">LOG IN</button>
+
+            <h3 class="h3for"><a href="">FORGOT PASSWORD</a></h3>
+          </div>
+        </div>
+        <!-- login section  -->
+        <div class="vertical"></div>
+        <!-- create-account-section  -->
+        <div class="vertical2"></div>
+        <div class="vertical"></div>
+        <div class="create_account_section">
+          <div>
+            <h1><b>CREATE AN ACCOUNT</b></h1>
+            <p class="p1">
+              If you create an account, you can get personalized services like
+              checking purchase history and getting discount coupons with your
+              membership. Register today for free!
+            </p>
+          </div>
+          <div>
+            <a href="signup.html"><button id="button">CREATE AN ACCOUNT</button></a>
+          </div>
+        </div>
+        <!-- create-account-section  -->
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  var userData = JSON.parse(localStorage.getItem("newUser")) || [];
+
+  
+  // console.log(userData);
+  function submit() {
+    var login_input_email = document.getElementById("login_input_email");
+    var login_input_password = document.getElementById("login_input_password");
+
+    var label = document.getElementById("label");
+    var label2 = document.getElementById("label2");
+    var show = document.getElementById("show");
+    var show2 = document.getElementById("show2");
+
+    if (login_input_email.value == "") {
+      login_input_email.style.borderColor = "red";
+      show.innerHTML = "Please enter your email";
+      show.style.color = "red";
+      label.style.color = "red";
+    }
+    if (login_input_password.value == "") {
+      login_input_password.style.borderColor = "red";
+      show2.innerHTML = "Please enter your password";
+      show2.style.color = "red";
+      label2.style.color = "red";
+    } else {
+      userData.map(function (element) {
+        // console.log(element.email)
+        // console.log(typeof login_input_email.value);
+
+        if (element.email != login_input_email.value) {
+          // console.log('moin')
+
+          login_input_email.style.borderColor = "red";
+          show.style.color = "red";
+          show.innerHTML = "Email doesn't match";
+          label.style.color = "red";
+        }
+        if (element.password != login_input_password.value) {
+          login_input_password.style.borderColor = "red";
+          show2.innerHTML = "Password doesn't match";
+          show2.style.color = "red";
+          label2.style.color = "red";
+        }
+        if (element.email == login_input_email.value) {
+          login_input_email.style.borderColor = "rgb(143, 143, 143)";
+          show.style.color = "white";
+          show.innerHTML = "";
+          label.style.color = "black";
+        }
+        if (element.password == login_input_password.value) {
+          login_input_password.style.borderColor = "rgb(143, 143, 143)";
+          show2.style.color = "white";
+          show2.innerHTML = "";
+          label2.style.color = "black";
+        }
+        if (
+          element.email == login_input_email.value &&
+          element.password == login_input_password.value
+        ) {
+          location.href = "index.html";
+          console.log("moin");
+        }
+
+      });
+    }
+    login_input_email.value = ''
+    login_input_password.value = ''
+
+  }
+  // console.log(userData)
+</script>

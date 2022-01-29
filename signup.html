@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign up</title>
+  </head>
+  <body>
+    <style>
+      .sign_parent {
+        width: 40%;
+        height: 660px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+          rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      }
+      .sign_child {
+        width: 95%;
+        height: 95%;
+        margin: auto;
+      }
+      .create_nav {
+        width: 40%;
+        height: 120px;
+        margin: auto;
+      }
+      .up {
+        width: 98%;
+        height: 30%;
+      }
+      .up2 {
+        width: 98%;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .create_email_top {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .create_middle2 {
+        width: 100%;
+        height: 2%;
+        border-top: 1px solid rgb(192, 192, 192);
+      }
+      .create_middle {
+        width: 100%;
+        height: 2%;
+      }
+      .create_email_bottom {
+        width: 100%;
+      }
+      .star_create {
+        color: teal;
+      }
+      .create_email {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+      }
+      .create_input_email {
+        width: 70%;
+        height: 100%;
+      }
+      .create_label {
+        width: 30%;
+        height: 100%;
+      }
+      #create_label_title {
+        font-size: 20px;
+        font-family: 400;
+        font-family: "Times New Roman", Times, serif;
+      }
+      #create_emails {
+        width: 98%;
+        height: 30px;
+        padding-top: 4px;
+        outline: none;
+        background-color: whitesmoke;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+      }
+      .create_emails {
+        width: 98%;
+        height: 30px;
+        padding-top: 4px;
+        outline: none;
+        background-color: whitesmoke;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+      }
+      .create_input_email_radio {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        gap: 10px;
+      }
+      #buttonRegister {
+        width: 40%;
+        height: 40px;
+        border: none;
+        background-color: black;
+        color: white;
+        font-size: 18px;
+      }
+      #terms_creaate > a {
+        font-size: 14px;
+        color: black;
+      }
+      .img_lock {
+        width: 16px;
+      }
+      #create_pincode_show{
+        margin-top: -30px;
+        margin-left: 528px;
+      }
+      #create_password_show{
+        margin-top: -30px;
+        margin-left: 528px;
+
+      }
+      #create_email_show{
+        margin-top: -30px;
+        margin-left: 528px;
+
+      }
+      #create_birth_show{
+        margin-top: -30px;
+        margin-left: 528px;
+
+      }
+      #create_unselect_show{
+        margin-top: -30px;
+        margin-left:676px;
+      }
+      #create_agree_show{
+        margin-top: -30px;
+        margin-left:676px;
+      }
+    </style>
+    <div class="create_nav">
+      <div class="up">
+        <a href="" style="color: rgb(59, 59, 59)">UNIQLO HOME PAGE</a> /
+        <p style="display: inline-block; color: rgb(59, 59, 59)">
+          CREATE AN ACCOUNT
+        </p>
+      </div>
+      <div class="up2">
+        <a href=""
+          ><h2 style="display: inline-block; color: black">
+            CREATE AN ACCOUNT
+          </h2></a
+        >
+        <p style="display: inline-block">
+          <img
+            class="img_lock"
+            src="https://icons-for-free.com/iconfiles/png/512/simple+and+minimal+line+icons+lock-1324450546526198208.png"
+            alt="sfdsfsd"
+          />
+        </p>
+      </div>
+      <!-- start ------------------------------------------------------------------------------ -->
+    </div>
+    <div class="sign_parent">
+      <div class="sign_child">
+        <!-- TOP ------------------------------------------------------------------------------  -->
+        <div class="create_email_top">
+          <p>
+            You will receive the confirmation mail to your email address
+            associated with account. <br />
+            Please make sure to check your incoming email from us.
+          </p>
+          <div class="create_email">
+            <div class="create_label">
+              <label for="email" id="create_label_email"
+                >EMAIL ADDRESS <strong class="star_create">*</strong></label
+              >
+            </div>
+            <div class="create_input_email">
+              <input
+              onchange="email()"
+                class="create_emails"
+                type="text"
+                id="create_emails"
+                placeholder="xxx@uniqlo.com"
+              />
+              <p id="create_email_show"><p>.</p></p>
+            </div>
+          </div>
+          <div class="create_email">
+            <div class="create_label">
+              <label for="email" id="create_label_password"
+                >PASSWORD <strong class="star_create">*</strong></label
+              >
+            </div>
+            <div class="create_input_email">
+              <input
+                class="create_emails"
+                type="password"
+                id="create_password"
+                placeholder="Pls enter password"
+              />
+              <p id="create_password_show"><p>.</p></p>
+            </div>
+          </div>
+          <div class="create_email">
+            <div class="create_label">
+              <label for="email" id="create_label_pincode"
+                >PINCODE <strong class="star_create">*</strong></label
+              >
+            </div>
+            <div class="create_input_email">
+              <input
+                class="create_emails"
+                type="text"
+                id="create_pincode"
+                placeholder="Pls enter pincode"
+              />
+              <p id="create_pincode_show"><p>.</p></p>
+            </div>
+          </div>
+          <div class="create_email">
+            <div class="create_label">
+              <label for="email" id="create_label_birth"
+                >BIRTHDAY<strong class="star_create">*</strong></label
+              >
+            </div>
+            <div class="create_input_email">
+              <input
+                class="create_emails"
+                type="date"
+                id="create_birth"
+                placeholder="Enter Your Email"
+              />
+              <p id="create_birth_show"></p>
+            </div>
+          </div>
+          <div class="create_email">
+            <div class="create_label">
+              <label for="email" id="create_label_gender"
+                >GENDER <strong class="star_create">*</strong></label
+              >
+            </div>
+            <div class="create_input_email_radio">
+              <input type="radio" id="maleGen"  onclick="radio('male')"/>
+              <label for="male"> Male</label>
+              <input type="radio" id="femaleGen" onclick="radio('female')"/>
+              <label for="female">Female</label>
+              <input type="radio"  id="unselectGen" onclick="radio('unselect')"/>
+              <label for="unselect" >Unselect</label>
+            </div>
+          </div>
+          <div class="create_email_below">
+            <p style="font-weight: bold">
+              SUBSCRIBE ME TO UNIQLO’S MAILING LIST
+            </p>
+            <div>
+              <input type="radio" />
+              <label for="un">UNIQLO E-newsletter</label>
+            </div>
+          </div>
+        </div>
+        <!-- middle ----------------------------------------------------------------------------->
+        <div class="create_middle"></div>
+        <div class="create_middle2"></div>
+        <!-- BOTTOM  ------------------------------------------------------------------------------->
+        <div class="create_email_bottom">
+          <h5>MEMBERSHIP AGREEMENT</h5>
+          <p style="font-size: 15px; color: rgb(116, 116, 116)">
+            By creating an account, you agree to UNIQLO’s privacy policy and
+            terms of use.
+          </p>
+          <div>
+            <input type="radio" id="agreeRadio" />
+            <p
+              style="
+                display: inline-block;
+                font-size: 13px;
+                color: rgb(43, 43, 43);
+              "
+            >
+              I agree to the UNIQLO’s TERMS OF USE and PRIVACY POLICY
+            </p>
+          </div>
+          <div id="terms_creaate">
+            <a href="">TERMS OF USE</a>
+            <p style="display: inline-block; color: white;">---</p>
+            <a style="display: inline-block" href="">PRIVACY POLICY</a>
+          </div>
+          <button id="buttonRegister" onclick="register()">REGISTER</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  var newUser =  JSON.parse(localStorage.getItem("newUser")) || [];
+function radio (res){
+console.log(res)
+}
+radio()
+
+      function register(gen) {
+      var create_emails = document.getElementById("create_emails");
+      var create_password = document.getElementById("create_password");
+      var create_pincode = document.getElementById('create_pincode')
+      var create_birth = document.getElementById('create_birth')
+      var maleGen = document.getElementById('maleGen')
+      var femaleGen = document.getElementById('femaleGen')
+      var unselectGen = document.getElementById('unselectGen')
+
+
+      var create_label_email = document.getElementById('create_label_email')
+      var create_label_password = document.getElementById('create_label_password')
+      var create_label_pincode = document.getElementById('create_label_pincode')
+      var create_label_birth = document.getElementById('create_label_birth')
+      var create_email_show = document.getElementById("create_email_show");
+      var create_password_show = document.getElementById("create_password_show");
+      var create_pincode_show = document.getElementById('create_pincode_show')
+      var create_birth_show = document.getElementById('create_birth_show')
+
+
+
+      
+
+      if (create_emails.value == "") {
+        create_emails.style.borderColor = "red";
+        create_email_show.style.color = "red";
+        create_label_email.style.color = "red";
+        create_email_show.innerHTML = 'Pls_Enter_An_Email'
+      }
+      if (create_emails.value != "") {
+        create_emails.style.borderColor = "rgb(143, 143, 143)";
+        create_email_show.style.color = "white";
+        create_label_email.style.color = "black";
+      }
+      if (create_password.value == "") {
+        create_password.style.borderColor = "red";
+        create_password_show.style.color = "red";
+        create_label_password.style.color = "red";
+        create_password_show.innerHTML = 'Pls_Enter_A_Password'
+
+      } 
+     
+
+      if (create_pincode.value == "") {
+        create_pincode.style.borderColor = "red";
+        create_pincode_show.style.color = "red";
+        create_label_pincode.style.color = "red";
+        create_pincode_show.innerHTML = 'Pls_Enter_A_Pincode'
+      } 
+
+      if (create_pincode.value != "") {
+
+        create_pincode.style.borderColor = "rgb(143, 143, 143)";
+        create_pincode_show.style.color = "white";
+        create_label_pincode.style.color = "black";
+
+
+      } 
+      if (create_birth.value == "") {
+        create_birth.style.borderColor = "red";
+        create_birth_show.style.color = "red";
+        create_label_birth.style.color = "red";
+        create_birth_show.innerHTML = 'Pls_Enter_A_Birth'
+      } 
+      if (create_birth.value != "") {
+        create_birth.style.borderColor = "rgb(143, 143, 143)";
+        create_birth_show.style.color = "white";
+        create_label_birth.style.color = "black";
+      } 
+      if(create_password.value != ''){
+       var res = create_password.value
+
+       for ( var i = 0; i < res.length; i++){
+     
+        if( res[i] == '@' || res[i]  == '&' || res[i] == '#' && create_password.value.length > 8){
+
+
+        create_password.style.borderColor = "rgb(143, 143, 143)";
+        create_label_password.style.color = "black";
+create_password_show.style.color = "white";
+
+      
+
+          
+     
+      
+var user = {
+ email: create_emails.value,
+ password: create_password.value,
+ pincode:create_pincode.value,
+ birth:create_birth.value,
+ gender : maleGen.value
+}
+
+ newUser.push(user)
+localStorage.setItem('newUser', JSON.stringify(newUser))
+window.location.href="signin.html";
+
+
+create_emails.value = ''
+       create_password = ''
+       create_pincode = ''
+       create_birth = ''
+break
+
+        }
+        if(  create_password.value.length < 8){
+       
+        create_password_show.innerHTML = 'character_must_be_at_least_8'
+    
+            }
+        else{
+          create_password.style.borderColor = "red";
+        create_password_show.style.color = "red";
+        create_label_password.style.color = "red";
+        create_password_show.innerHTML = 'Use_specaial_character_also_(@#&)'
+          
+        }
+      
+       }
+      }
+      
+      
+     
+    }
+</script>
+

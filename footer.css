@@ -1,0 +1,87 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container{
+    background-color: #f4f4f4;
+}
+.container>div{
+    width: 90%;
+    margin: auto;
+}
+.footer{
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+.footer>:nth-child(1){
+    height: 100%;
+    width: 55%;
+    display: flex;
+}
+.footer>:nth-child(2){
+    width: 45%;
+    height: 100%;
+    display: flex;
+}
+.footerdiv1>div{
+    height: 100%;
+    width: 33%;
+    margin-top: 20px;
+}
+.footerdiv1>div>div{
+    padding-top: 20px;
+}
+.footerdiv11{
+    margin-bottom: 20px;
+}
+.footerdiv11>a{
+    text-decoration: none;
+    color: black;
+}
+h2{
+    font-weight: 600;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+.footerdiv2>div{
+    width: 50%;
+    margin-top: 20px;
+}
+.footerdiv2>div>div{
+    padding-top: 20px;
+}
+.Subs{
+    text-decoration: underline;
+    font-weight: 600;
+
+}
+.utube{
+    margin: 40px 0px 0px 60%;
+    width: 40px;
+    height: 30px;
+}
+.lastfooter{
+    display: flex;
+}
+.lastfooter>:nth-child(1){
+    margin: 20px 0px;
+    color: #9da4ad;
+    width: 40%;
+}
+.lastfooter>:nth-child(2){
+    margin: 20px 0px;
+    display: flex;
+    width: 60%;
+    flex-direction: row-reverse;
+}
+.lastfooter>:nth-child(2)>a{
+    color: #9da4ad;
+    margin-left: 20px;
+    text-decoration: underline;
+}

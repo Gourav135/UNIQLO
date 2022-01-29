@@ -1,0 +1,213 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.container{
+    background-color: white;
+}
+.nav{
+    background-color: white;
+}
+#nav1 {
+    height: 38px;
+    background-color: #f4f4f4;
+  }
+#nav1 > div {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100%;
+    min-width: 1100px;
+    align-items: center;
+    font-weight: 700;
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, "Noto Sans",
+      Roboto, Arial, "Hiragino Sans", "Hiragino Kaku Gothic Pro",
+      "ヒラギノ角ゴ Pro W3", "Noto Sans CJK JP", Osaka, Meiryo, メイリオ,
+      "MS PGothic", "ＭＳ Ｐゴシック", "Hiragino Sans GB",
+      "Arial Unicode MS", sans-serif;
+    font-size: 14px;
+  }
+  #nav1 div span a{
+    text-decoration: none;
+    color: black;
+  }
+#span1 {
+    font-weight: normal;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #1b1b1b;
+}
+#span2 {
+font-weight: normal;
+color: #1b1b1b;
+}
+.nav>div{
+    width: 90%;
+    margin: auto;
+    height: 70px;
+    display: flex;
+}
+.navbarcategory{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    min-width: 40%;
+}
+.mainlogo{
+    width: 28%;
+    min-width: 150px;
+}
+.navbarcategory1{
+    width: 100px;
+    height: 40px;
+    margin: 13px 0;
+}
+.menubar{
+    width: 72%;
+    min-width: 330px;
+}
+.menubar>ul{
+    display: inline flex;
+    list-style: none;
+}
+.menubar>ul>li{
+    margin: 25px 25px 0px 0px;
+    float: left;
+}
+.menubar>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+.menubar>ul>li:hover{
+    border-bottom: 3px solid green;
+}
+.navbaricon{
+    width: 60%;
+    display: flex;
+    flex-direction: row-reverse;
+    min-width: 700px;
+}
+.navbaricon>div{
+    margin: 20px 0px 0px 40px;
+}
+#search{
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    width: 85%;
+    height: 100%;
+    outline: none;
+}
+#searchicon {
+font-size: 18px;
+}
+#searchitem {
+border: 1px solid #ababab;
+padding : 3px 0px 0px 15px;
+height: 30px;
+}
+i{
+font-size: 24px;
+font-weight: 700;
+color: #1b1b1b;
+}
+.sub-menu1{
+    display: none;
+    padding-top: 10px;   
+}
+.sub-menu1>ul>li{
+    list-style: none;
+    
+}
+.sub-menu1>ul>li>a{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+.menubar>ul>li:hover .sub-menu1{
+    display: block;
+    position: absolute;
+    background-color: white;
+}
+.menubar>ul>li:hover .sub-menu1>ul{
+    display: block;
+    margin: 0px 0px 10px 0px;
+}
+.menubar>ul>li:hover .sub-menu1>ul>li{
+    width: 150px;
+    padding: 10px;
+    border-radius: 0%;
+    text-align: left;
+}
+.menubar>ul>li:hover .sub-menu1>ul>li>a:hover{
+    text-decoration: underline;
+}
+.fa-caret-right{
+    float: right;
+}
+.sub-menu2{
+    display: none;
+    padding-top: 0%;
+}
+.sub-menu1>ul>li:hover .sub-menu2{
+    width: 160px;
+    position: absolute;
+    display: block;
+    margin-left: 140px;
+    margin-top: -20px;
+    background-color: white;
+}
+.sub-menu1>ul>li:hover .sub-menu2>ul>li{
+    display: block;
+    margin: 0px 0px 10px 0px;
+}
+.sub-menu1>ul>li:hover .sub-menu2>ul>li>a:hover{
+    text-decoration: underline;
+}
+.sub-menu2>ul>li{
+    list-style: none;
+}
+.sub-menu2>ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    padding-left: 5px;
+    margin-top: 15px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:1;
+}
+.sticky + .content {
+    padding-top: 60px;
+}
+.profile{
+    padding-top: 20px;
+    padding-left: 10px;
+    display: none;
+    width: 140px;
+}
+.profile>ul{
+    list-style: none;
+}
+.profile>ul>li{
+    padding-bottom: 20px;
+    display: block;
+}
+.profile>ul>li>a{
+    color: black;
+    text-decoration: none;
+    
+}
+.profileicon:hover .profile{
+    display: block;
+    position: absolute;
+    background-color: white;
+}
+.profileicon:hover .profile>ul>li>a:hover{
+    text-decoration: underline;
+}

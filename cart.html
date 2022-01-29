@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav bar.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<script
+    src="https://kit.fontawesome.com/511a6cb386.js"
+    crossorigin="anonymous">
+</script>
+
+<body>
+    <div>
+        <div id="nav1">
+            <div>
+              <span><a href="">English</a></span>
+              <span id="span1"><a href="">Store locator</a></span>
+              <span id="span2"><a href="">Help</a></span>
+            </div>
+          </div>
+        <div class="nav">
+            <div>
+                <div class="navbarcategory">
+                    <div class="mainlogo">
+                        <div class="navbarcategory1">
+                            <a href="index.html"><img src="data:image/png;base64,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" alt="" width="100%" height="100%"></a>
+                        </div>
+                    </div>
+                    <div class="menubar">
+                        <ul>
+                            <li><a href="ultralightdown.html">WOMEN</a>
+                            <div class="sub-menu1">
+                                <ul>
+                                    <li class="hover-me"><a href="ultralightdown.html">Outerwear</a>
+                                        <a href="ultralightdown.html"><i class="fas fa-caret-right"></i></a>
+                                        <div class="sub-menu2">
+                                            <ul>
+                                                <li><a href="ultralightdown.html">Ultra Light Down</a></li>
+                                                <li><a href="ultralightdown.html">Fleece</a></li>
+                                                <li><a href="ultralightdown.html">Down</a></li>
+                                                <li><a href="ultralightdown.html">Coats</a></li>
+                                                <li><a href="ultralightdown.html">Blazers</a></li>
+                                                <li><a href="ultralightdown.html">jackets</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="ultralightdown.html">Tops</a>
+                                        <a href="ultralightdown.html"><i class="fas fa-caret-right"></i></a>
+                                        <div class="sub-menu2">
+                                            <ul>
+                                                <li><a href="ultralightdown.html">Sweaters & Cardigans</a></li>
+                                                <li><a href="ultralightdown.html">3D Knit</a></li>
+                                                <li><a href="ultralightdown.html">Sweatshirts & Hoodies</a></li>
+                                                <li><a href="ultralightdown.html">T-Shirt</a></li>
+                                                <li><a href="ultralightdown.html">Shirts & Tops</a></li>
+                                                <li><a href="ultralightdown.html">UT(Graphc T-Shirts</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="ultralightdown.html">Bottoms</a>
+                                        <a href="ultralightdown.html"><i class="fas fa-caret-right"></i></a>
+                                        <div class="sub-menu2">
+                                            <ul>
+                                                <li><a href="ultralightdown.html">Leggings Pants</a></li>
+                                                <li><a href="ultralightdown.html">Ankle Pants</a></li>
+                                                <li><a href="ultralightdown.html">Jeans</a></li>
+                                                <li><a href="ultralightdown.html">Pants (casual)</a></li>
+                                                <li><a href="ultralightdown.html">Pants (Formal)</a></li>
+                                                <li><a href="ultralightdown.html">Shorts</a></li>
+                                                <li><a href="ultralightdown.html">Skirts</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="ultralightdown.html">Innerwear</a>
+                                        <a href="ultralightdown.html"><i class="fas fa-caret-right"></i></a>
+                                        <div class="sub-menu2">
+                                            <ul>
+                                                <li><a href="ultralightdown.html">HETTECH Thermals</a></li>
+                                                <li><a href="ultralightdown.html">Inner Tops</a></li>
+                                                <li><a href="ultralightdown.html">Leggings</a></li>
+                                                <li><a href="ultralightdown.html">AIRsim Innerwear</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="ultralightdown.html">Loungewear</a>
+                                        <a href="ultralightdown.html"><i class="fas fa-caret-right"></i></a>
+                                        <div class="sub-menu2">
+                                            <ul>
+                                                <li><a href="ultralightdown.html">Loungewear</a></li>
+                                                <li><a href="ultralightdown.html">Room Shoes</a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="ultralightdown.html">Accessories</a>
+                                        <a href="ultralightdown.html"><i class="fas fa-caret-right"></i></a>
+                                        <div class="sub-menu2">
+                                            <ul>
+                                                <li><a href="ultralightdown.html">Accessories</a></li>
+                                                <li><a href="ultralightdown.html">Homeware</a></li>
+                                                <li><a href="ultralightdown.html">Socks</a></li>
+                                                <li><a href="ultralightdown.html">Shoes</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </li>
+                            <li><a href="ultralightdown.html">MEN</a>
+                                <div class="sub-menu1">
+                                    <ul>
+                                        <li class="hover-me"><a href="ultralightdown.html">Outerwear</a>
+                                            <a href="ultralightdown.html"><i class="fas fa-caret-right"></i></a>
+                                            <div class="sub-menu2">
+                                                <ul>
+                                                    <li><a href="ultralightdown.html">Ultra Light Down</a></li>
+                                                    <li><a href="ultralightdown.html">Fleece</a></li>
+                                                    <li><a href="ultralightdown.html">Down</a></li>
+                                                    <li><a href="ultralightdown.html">Coats</a></li>
+                                                    <li><a href="ultralightdown.html">Blazers</a></li>
+                                                    <li><a href="ultralightdown.html">jackets</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="ultralightdown.html">Tops</a>
+                                            <a href="ultralightdown.html"><i class="fas fa-caret-right"></i></a>
+                                            <div class="sub-menu2">
+                                                <ul>
+                                                    <li><a href="ultralightdown.html">Sweaters & Cardigans</a></li>
+                                                    <li><a href="ultralightdown.html">Sweatshirts & Hoodies</a></li>
+                                                    <li><a href="ultralightdown.html">Shirts(Casual)</a></li>
+                                                    <li><a href="ultralightdown.html">Shirts(Formal)</a></li>
+                                                    <li><a href="ultralightdown.html">T-Shirt</a></li>
+                                                    <li><a href="ultralightdown.html">Polo T-Shirt</a></li>
+                                                    <li><a href="ultralightdown.html">Shirts & Tops</a></li>
+                                                    <li><a href="ultralightdown.html">UT(Graphc T-Shirts</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="ultralightdown.html">Bottoms</a>
+                                            <a href="ultralightdown.html"><i class="fas fa-caret-right"></i></a>
+                                            <div class="sub-menu2">
+                                                <ul>
+                                                    <li><a href="ultralightdown.html">Ankle Pants</a></li>
+                                                    <li><a href="ultralightdown.html">Jeans</a></li>
+                                                    <li><a href="ultralightdown.html">Pants (casual)</a></li>
+                                                    <li><a href="ultralightdown.html">Pants (Formal)</a></li>
+                                                    <li><a href="ultralightdown.html">Shorts</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="ultralightdown.html">Innerwear</a>
+                                            <a href="ultralightdown.html"><i class="fas fa-caret-right"></i></a>
+                                            <div class="sub-menu2">
+                                                <ul>
+                                                    <li><a href="ultralightdown.html">HETTECH Thermals</a></li>
+                                                    <li><a href="ultralightdown.html">Inner Tops</a></li>
+                                                    <li><a href="ultralightdown.html">Tights</a></li>
+                                                    <li><a href="ultralightdown.html">AIRsim Innerwear</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="ultralightdown.html">Loungewear</a>
+                                            <a href="ultralightdown.html"><i class="fas fa-caret-right"></i></a>
+                                            <div class="sub-menu2">
+                                                <ul>
+                                                    <li><a href="ultralightdown.html">Loungewear</a></li>
+                                                    <li><a href="ultralightdown.html">Room Shoes</a></li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="ultralightdown.html">Accessories</a>
+                                            <a href="ultralightdown.html"><i class="fas fa-caret-right"></i></a>
+                                            <div class="sub-menu2">
+                                                <ul>
+                                                    <li><a href="ultralightdown.html">Accessories</a></li>
+                                                    <li><a href="ultralightdown.html">Homeware</a></li>
+                                                    <li><a href="ultralightdown.html">Socks</a></li>
+                                                    <li><a href="ultralightdown.html">Shoes</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="ultralightdown.html">KIDS</a>
+                                <div class="sub-menu1">
+                                    <ul>
+                                        <li class="hover-me"><a href="ultralightdown.html">Outerwear</a>
+                                            <a href="ultralightdown.html"><i class="fas fa-caret-right"></i></a>
+                                            <div class="sub-menu2">
+                                                <ul>
+                                                    <li><a href="ultralightdown.html">Jckets</a></li>
+                                                    <li><a href="ultralightdown.html">Coats & Parkas</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="ultralightdown.html">Tops</a>
+                                            <a href="ultralightdown.html"><i class="fas fa-caret-right"></i></a>
+                                            <div class="sub-menu2">
+                                                <ul>
+                                                    <li><a href="ultralightdown.html">Sweaters & Cardigans</a></li>
+                                                    <li><a href="ultralightdown.html">3D Knit</a></li>
+                                                    <li><a href="ultralightdown.html">Sweatshirts & Hoodies</a></li>
+                                                    <li><a href="ultralightdown.html">T-Shirt</a></li>
+                                                    <li><a href="ultralightdown.html">Shirts & Tops</a></li>
+                                                    <li><a href="ultralightdown.html">UT(Graphc T-Shirts</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="ultralightdown.html">Bottoms</a>
+                                            <a href="ultralightdown.html"><i class="fas fa-caret-right"></i></a>
+                                            <div class="sub-menu2">
+                                                <ul>
+                                                    <li><a href="ultralightdown.html">Pants</a></li>
+                                                    <li><a href="ultralightdown.html">Shorts</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="ultralightdown.html">Innerwear</a>
+                                            <a href="ultralightdown.html"><i class="fas fa-caret-right"></i></a>
+                                            <div class="sub-menu2">
+                                                <ul>
+                                                    <li><a href="ultralightdown.html">HETTECH Thermals</a></li>
+                                                    <li><a href="ultralightdown.html">Inner Tops</a></li>
+                                                    <li><a href="ultralightdown.html">Leggings & Tights</a></li>
+                                                    <li><a href="ultralightdown.html">AIRsim Innerwear</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="ultralightdown.html">Loungewear</a>
+                                            <a href="ultralightdown.html"><i class="fas fa-caret-right"></i></a>
+                                            <div class="sub-menu2">
+                                                <ul>
+                                                    <li><a href="ultralightdown.html">Loungewear</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="ultralightdown.html">Accessories</a>
+                                            <a href="ultralightdown.html"><i class="fas fa-caret-right"></i></a>
+                                            <div class="sub-menu2">
+                                                <ul>
+                                                    <li><a href="ultralightdown.html">Accessories</a></li>
+                                                    <li><a href="ultralightdown.html">Socks</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="ultralightdown.html">BABY</a>
+                                <div class="sub-menu1">
+                                    <ul>
+                                        <li><a href="ultralightdown.html">NEWBORN BABY (0-6 MONTHS</a>
+                                            <a href="ultralightdown.html"><i class="fas fa-caret-right"></i></a>
+                                            <div class="sub-menu2">
+                                                <ul>
+                                                    <li><a href="ultralightdown.html">Bodysuit</a></li>
+                                                    <li><a href="ultralightdown.html">One Piece</a></li>
+                                                    <li><a href="ultralightdown.html">AIRism</a></li>
+                                                    <li><a href="ultralightdown.html">Socks</a></li>
+                                                    <li><a href="ultralightdown.html">Leggings</a></li>
+                                                    <li><a href="ultralightdown.html">Inner Tops</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="ultralightdown.html">TODDLER (6-18 MONTHS)</a>
+                                            <a href="ultralightdown.html"><i class="fas fa-caret-right"></i></a>
+                                            <div class="sub-menu2">
+                                                <ul>
+                                                    <li><a href="ultralightdown.html">Tops</a></li>
+                                                    <li><a href="ultralightdown.html">Leggings</a></li>
+                                                    <li><a href="ultralightdown.html">AIRism</a></li>
+                                                    <li><a href="ultralightdown.html">Socks</a></li>
+                                                    <li><a href="ultralightdown.html">Outerwear</a></li>
+                                                    <li><a href="ultralightdown.html">Inner Tops</a></li>
+                                                    <li><a href="ultralightdown.html">HEATTECH</a></li>
+                                                    <li><a href="ultralightdown.html">Bottoms</a></li>
+                                                    <li><a href="ultralightdown.html">Loungewear</a></li>
+                                                    <li><a href="ultralightdown.html">UT(Graphic T-Shirts)</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+    
+                </div>
+                <div class="navbaricon">                      
+                        <div>
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                        <div><a href=""><i class="far fa-heart"></i></a></div>
+                        <div class="profileicon"><a href=""><i class="far fa-user"></i></a>
+                            <div class="profile">
+                                <ul>
+                                    <li><a href="">Profile</a></li>
+                                    <li><a href="">Coupons</a></li>
+                                    <li><a href="">Purchase History</a></li>
+                                    <li><a href="orderhistory.html">Order History</a></li>
+                                    <li><a href="signin.html">Sign In</a></li>
+                                    <li><a href="">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="searchitem">
+                            <div><input
+                                id="search" type="text" placeholder="Search by keyword"/>
+                                <a href=""><i id="searchicon" class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div id="cartpage"><br>
+        <p id="location">UNIQLO HOME PAGE / SHOPPING CART</p>
+        <br><br><br>
+        <p id="shoppingcart">SHOPPING CART</p><br><br><br><br><br>
+        <div id="cartitems1">
+            <div id="cartitems"></div>
+            <div  id="cartitems2">
+                
+            </div>
+        </div>
+    </div>
+    <div>
+        <footer class="container">
+            <div>
+                <div class="footer">
+                    <div class="footerdiv1">
+                        <div>
+                            <div>
+                                <h2>About Uniqlo</h2>
+                            </div>
+                            <div>
+                                <a href=""><p>Information</p></a>
+                            </div>
+                            <div>
+                                <a href=""><p>Store Locator</p></a>
+                            </div>
+                            
+                            
+                        </div>
+                        <div>
+                            <div>
+                                <h2>Help</h2>
+                            </div>
+                            <div>
+                                <a href=""><p>FAQ</p></a>
+                            </div>
+                            <div>
+                                <a href=""><p>Return Policy</p></a>
+                            </div>
+                            <div>
+                                <a href=""><p>Privacy Policy</p></a>
+                            </div>
+                            <div>
+                                <a href=""><p>Accessibility</p></a>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h2>Account</h2>
+                            </div>
+                            <div>
+                                <a href=""><p>Membership</p></a>
+                            </div>
+                            <div>
+                                <a href=""><p>Profile</p></a>
+                            </div>
+                            <div>
+                                <a href=""><p>Coupons</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="footerdiv2">
+                        <div>
+                            <div>
+                                <h2>E-Newsletter</h2>
+                            </div>
+                            <div>
+                                <p>Sign up and be the first-in-the know about new arrivals, promotions, in-store events and more.</p>
+                            </div>
+                            <div>
+                                <a href=""><p class="Subs">SUBSCRIBE NOW</p></a>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h2>UNIQLO  Social Account</h2>
+                                <div class="utube">
+                                    <a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAhFBMVEUoKCj///8AAADa2tokJCQZGRkeHh4bGxsVFRUiIiITExOcnJwODg6QkJCrq6v5+fkJCQmHh4dzc3NKSkri4uLu7u7IyMhERETR0dHGxsa5ubmkpKRRUVE5OTlXV1cwMDBlZWV/f39ubm6zs7N6enotLS1nZ2dHR0eMjIw9PT2Xl5fe3t75cRsxAAAGF0lEQVR4nO2d4XaqOhCFaYAEMAgiVhQVtdZW+/7vd8HaY8/SKncx7EDPfP+siskuTGYmk8SyGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIYxgFPi+76UUim3xDsRXPj8Q/WWUqr8WPlhv/qS6YaTUHZdKrfsro5jcSIOpFUcpuPFYrVPdqP3MAyPg3xQMrxQvRwcy7feR6NNkmzXq8ViPF0WlgrOV4l1KZyrpN8TnRypPH2SICgW62QT5vlwnmX2RzqZRFH01ITy+5PUtrPZfJgPws12NX3VlUY6cDuqj+9poeV0O8rnMzudNOr9/2CSZvNhmCxKeWJPdkgZxxPOejBLm90HzYjS5zyxRNANWXxxyFODanwnzQ/CNy2I5YhVZlqJv8hWwvC94hXdUqQiKzyTkoiNaQFushMGJZmb7v0PvBgTRXTvufliZkgU8Wy653cwI4oYmu73XfIYL4namu71A9YSrok06bXWIQrQksRdHXIuDDVWEudgusc1eMU6tLr7t0l5o2CfHmG6v3WIoOOx3Jnuby22yKGnF4/O09McaWUFLJHWiAnw4XGWpntbkyVu5JGJ6c7WJMEZFC833dma5LjsUtzliPg7z7hAsCcmFmpklem+1kahJHGmprtamylq4OnNsAMceNyj6a7W5uiCNAleTHe1Ni+o0Lg3QzFwMBZdmR5+TIoajEXXU7EXYA5KLxJKZ0CaOK8EbUXdaiD/xF8QtDWbfhBc5TFjjChyT9BWW4gEETWtMSU6akPQVltYSgwILvSAHcaRJXFj7cr4BVbred0Q48iSZJROmliOeLMJLnYHUFaJxLW3z4Ok37JZAc176RlBW+0/joMSIcH1fgI0nRFTlCfZ35wpT7YXVIICHkFhAuy/HMx42lYZWAbShCIE/FuT0qzs2zErNsa5J8lQX7VVirANfx8UGJOExTf+f57bglkBBcZxS5qUV16SmxVQvQXJTMbt59wRa+J8FaoGhaKtP9k+KUa0ZgXiszkFRVN/Hg9cTVp4C4kBacr77o2RekmYBEdIQjQLeNdvcMSKzKwUiKSSM6Zo6gNfyhcbIrMCKcshST0+9i/dmKbI5QDRZEXR1Bo+t7YoAnDILLq/JmhprTikNCvNE9lvv0uTyqzsmgZXkMQ9Sdq+drzaOJGN0YRk4U79GL5hInuBmMzA3ifWKbfS4IdWCE2Q9qSi4X3yCzVpbE8wmqD8E4tk3IHYE5wmjlg0T4dDxh2Qb0/lx0J8NkgMWBoSongH4ts7bxRN/V1xMedPbjSYZEHT/TwbhSE5A1AEkY8lXR0EWoVA0VRU3j7C1BXw/M41usV5QPKqdZAm7c0Xt7CjCmi+uK26gvc26go+QJq0UH9SGpJ26k8ykCZcp3QFfT2baq+eDVXjRzE4XDSRrdY9ghZ6kWxqcamP3bZaH4uqGaYYMr/qqFszJGdAiyQ9iqUDn/X2Tuv19htMvKNGBG09rcsArMkFbZVDsuQatX4HkranWud1aHlBxhnQOi+SZAFqPSBIEV43ekuTvmx/glxfzOvQr+D9Cq7hfS2u8Xj/kyt6sttjBWyfHJrZUQiw/ZQsabqrtUE9Oj1yUID7s5FkHxEA9/EjySohAO732JuBB7gvaG/2j4UUn5zpiZFF7jPM+1HfoCcGBWhOrL6klbDnzfTi4XnBHpjRi/MygLuWn+jBuSov8FOJOh8HRrj47wvV9c2Gt7C9qC90/DyvoZlDzrqcqn42dRhed1MGoDK2W6J0dfCZmzxcc2O69zfZGJSko+fSLo2eS9vF84vXps8vtrp2zvWyA+dcV1TnoW+Nn4c+G+xfhWf+HrkgPS20NU7C4TxLYVm4aJJm83yUTH0tYk92SZA/+NINdCyEiF/Hq3XyPsiH81mW2ekkihreRVE0maQftp3N5sN8EG62q4MS1S9pT3VTjCscx/el8rxA67gSSQitrKIoDtNSrJL9djeqeA/DY1hxHJw5vare2iXJfrVYjKeHorwNPy9SahDrwPNcJf1+CPEIp8I/IaVUJ9wvvDOnF9U75Udk+cnqO6YbzjAMwzAMwzAMwzAMwzAMwzAMwzAMwzD/Jv8B4CuLkpw6T7oAAAAASUVORK5CYII=" alt="" width="100%" height="100%"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerdiv11"><a href=""><h2>English</h2></a></div>
+            </div>
+            <hr>
+            <div class="lastfooter">
+                <div>
+                    <p>COPYRIGHT © UNIQLO CO., LTD. ALL RIGHTS RESERVED.</p>
+                </div>
+                <div>
+                    <a href=""><p>Terms of use</p></a>
+                    <a href=""><p>Privacy policy</p></a>
+                </div>
+            </div>
+            
+        </footer>
+    </div>
+    <script src="nav bar.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,74 @@
+.checkout1{
+    width: 90%;
+    margin: auto;
+}
+.delivery{
+    width: 650px;
+}
+
+.flexing{
+    display: flex;
+    justify-content: space-around;
+}
+.flexing1{
+    display: flex;
+    justify-content: space-evenly;
+}
+#paymentbtn{
+    width: 270px;
+    height: 40px;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+#newaddressbtn{
+    width: 270px;
+    height: 40px;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+#pricetabflex{
+    display: flex;
+    justify-content: space-between;
+}
+#pricetabflex>:nth-child(1){
+    padding: 15px;
+    border: 1px solid black;
+}
+#pricetabflex>:nth-child(2){
+    border: 1px solid black;
+    padding: 15px;
+    width: 350px;
+    height: 250px;
+}
+.checkoutpart0{
+    display: flex;
+}
+#totalitsms{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+.checkoutpart2{
+    display: flex;
+    justify-content: space-between;
+}
+.checkoutpart1{
+    display: flex;
+    justify-content: space-between;
+}
+.checkoutpart3{
+    display: flex;
+    justify-content: space-between;
+}
+#totalpriceshipping{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
