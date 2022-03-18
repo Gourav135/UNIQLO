@@ -9,15 +9,11 @@ One of the world's largest apparel retail company offering clothing, shoes, and 
 # Snapshots
 ![Screenshot (1298)](https://user-images.githubusercontent.com/96097268/158852972-6aa43773-f3d1-4193-b551-4efb14ac4883.png)
 
-![Screenshot (1306)](https://user-images.githubusercontent.com/96097268/158853118-dd7c16c0-4d28-49cc-bb6d-149f08517025.png)
-
 ![Screenshot (1300)](https://user-images.githubusercontent.com/96097268/158853177-60a542ab-6890-41bd-92d0-984ce9161eae.png)
 
 ![Screenshot (1301)](https://user-images.githubusercontent.com/96097268/158853275-2206fbc4-d719-4354-b675-4f39749b395c.png)
 
 ![Screenshot (1302)](https://user-images.githubusercontent.com/96097268/158853303-ac02a962-db17-4fb7-96ed-80fbd453afd6.png)
-
-![Screenshot (1304)](https://user-images.githubusercontent.com/96097268/158853360-8b140886-142f-460d-8d69-260ca8927765.png)
 
 ![Screenshot (1305)](https://user-images.githubusercontent.com/96097268/158853379-328093fa-43ce-49e6-b21f-b8ff281ef8e5.png)
 
@@ -39,7 +35,6 @@ One of the world's largest apparel retail company offering clothing, shoes, and 
 
 ## Instructions to Run the Code 
 
-- Clone our repository `https://github.com/Gourav135/UNIQLO.git`
-- Open that code in your VS code `index.html`
-- Open the `index.html` on Live server
-- Then you can Navigate through other pages from Landing page like `signin.html`, `cart.html`, `product.html` etc.
+- Clone the repository `https://github.com/Gourav135/UNIQLO.git`
+- Then Open the code in your VS code
+- At last Open the `index.html` with Live server
