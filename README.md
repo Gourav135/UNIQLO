@@ -8,13 +8,12 @@ One of the world's largest apparel retail company offering clothing, shoes, and 
  
 # Snapshots
 ![Screenshot (1298)](https://user-images.githubusercontent.com/96097268/158852972-6aa43773-f3d1-4193-b551-4efb14ac4883.png)
-![Screenshot (1299)](https://user-images.githubusercontent.com/96097268/158853013-70dca66d-fa06-4590-b8d2-f214f49c8053.png)
+
 ![Screenshot (1306)](https://user-images.githubusercontent.com/96097268/158853118-dd7c16c0-4d28-49cc-bb6d-149f08517025.png)
 
 ![Screenshot (1300)](https://user-images.githubusercontent.com/96097268/158853177-60a542ab-6890-41bd-92d0-984ce9161eae.png)
 
 ![Screenshot (1301)](https://user-images.githubusercontent.com/96097268/158853275-2206fbc4-d719-4354-b675-4f39749b395c.png)
-
 
 ![Screenshot (1302)](https://user-images.githubusercontent.com/96097268/158853303-ac02a962-db17-4fb7-96ed-80fbd453afd6.png)
 
