@@ -4,7 +4,7 @@ One of the world's largest apparel retail company offering clothing, shoes, and 
 
 # Deployed Link:
 
-<h2>https://github.com/MdMoin788/UNIQLO.COM.git</h2>
+<h2>https://gourav135.github.io/UNIQLO/</h2>
  
 # Snapshots
 ![Screenshot (1298)](https://user-images.githubusercontent.com/96097268/158852972-6aa43773-f3d1-4193-b551-4efb14ac4883.png)
@@ -40,7 +40,7 @@ One of the world's largest apparel retail company offering clothing, shoes, and 
 
 ## Instructions to Run the Code 
 
-- Clone our repository `https://github.com/MdMoin788/UNIQLO.COM.git`
+- Clone our repository `https://github.com/Gourav135/UNIQLO.git`
 - Open that code in your VS code `index.html`
 - Open the `index.html` on Live server
 - Then you can Navigate through other pages from Landing page like `signin.html`, `cart.html`, `product.html` etc.
